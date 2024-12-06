@@ -1,0 +1,199 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header .navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+    color: #ecf0f1;
+}
+
+/* Contenu de l'en-tête */
+header .header-content img {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+/* Style des sections principales */
+main {
+    padding: 30px 20px;
+}
+
+/* Section des Analogies */
+#analogies {
+    margin-bottom: 50px;
+}
+
+#analogies h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style des bulles interactives */
+.interactive-bubble {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.interactive-bubble:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+.bubble-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.interactive-bubble strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Podcast section */
+#podcast {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#podcast h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#podcast p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* Section des actualités et à propos */
+.interactive-model {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#actualités, #apropos h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#actualités p, #apropos p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Responsive navbar */
+    header .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust the podcast section */
+    .video-container iframe {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Adjust bubble sizes and paddings */
+    .interactive-bubble {
+        padding: 15px;
+    }
+
+    #analogies h2 {
+        font-size: 2rem;
+    }
+}

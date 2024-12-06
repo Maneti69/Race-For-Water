@@ -8,9 +8,9 @@
 .corner-image {
     position: absolute; /* Position absolue pour placer l'image dans le coin */
     top: 10px; /* Distance par rapport au haut de la page */
-    left: 10px; /* Distance par rapport au bord gauche */
-    width: 200px; /* Largeur de l'image */
-    height: 200px; /* Hauteur de l'image */
+    left: 30px; /* Distance par rapport au bord gauche */
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
     z-index: 1000; /* Assurez-vous que l'image est au-dessus des autres éléments */
 }
 

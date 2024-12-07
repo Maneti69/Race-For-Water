@@ -77,31 +77,44 @@ main {
     text-align: center;
 }
 
-/* Style des bulles interactives */
+/* Conteneur pour les images des bulles */
+.interactive-bubbles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+/* Style des images en forme de bulle */
 .interactive-bubble {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+    width: 100px; /* Taille de la bulle */
+    height: 100px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50%; /* Assurez-vous que l'image est ronde */
+    object-fit: contain; /* Empêche l'image d'être trop zoomée, l'ajuste pour tenir dans la bulle */
+    transition: transform 0.3s ease;
 }
 
 .interactive-bubble:hover {
-    background-color: #2980b9;
-    transform: translateY(-5px);
+    transform: scale(1.1); /* Effet de survol */
 }
 
-.bubble-content {
+/* Style pour la zone de texte affichée après avoir cliqué sur une bulle */
+.bubble-text-container {
     display: none;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.interactive-bubble strong {
+.bubble-text-container p {
+    font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
-    font-weight: bold;
 }
+
 
 /* Podcast section */
 #podcast {

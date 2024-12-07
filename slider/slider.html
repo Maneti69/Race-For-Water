@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race For Water</title>
+    <link rel="stylesheet" href="styles-slider.css">
+    <link rel="icon" type="image/png" href="../media/icone.png">
+</head>
+
+<body>
+    <!-- Icône flottante du menu -->
+    <div class="menu-icon" id="menu-icon">☰</div>
+
+    <!-- Menu de navigation -->
+    <div class="navbar" id="navbar">
+        <button class="home-btn" onclick="window.location.href='../index.html'">Retour à l'accueil</button>
+    </div>
+
+    <!-- Conteneur principal -->
+    <div class="slider-container">
+        <div class="image-wrapper">
+            <img src="propre.jpg" alt="Avant" class="image-left">
+            <img src="pollution.jpg" alt="Après" class="image-right">
+        </div>
+
+        <input type="range" class="slider" min="0" max="100" value="50" id="slider">
+        <div class="slider-icon" id="slider-icon">⟷</div>
+        <div class="line" id="line"></div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+
+</html>

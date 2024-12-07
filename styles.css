@@ -92,10 +92,15 @@ main {
     object-fit: contain; /* Adapter l'image sans déformation */
     display: block; /* Assurez-vous que l'image se comporte comme un bloc */
     overflow: hidden; /* S'assure que le contenu respecte le bord arrondi */
+    border: 5px solid #3498db; /* Ajoute une bordure de 5px avec une couleur bleue */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    
 }
 
 .interactive-bubble:hover {
     transform: scale(1.1); /* Effet de survol */
+    border-color: #e74c3c; /* Change la couleur de la bordure au survol */
+
 }
 
 /* Style pour la zone de texte affichée après avoir cliqué sur une bulle */

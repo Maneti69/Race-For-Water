@@ -88,10 +88,10 @@ main {
 .interactive-bubble {
     width: 100px; /* Taille de la bulle */
     height: 100px;
-    cursor: pointer;
-    border-radius: 50%; /* Assurez-vous que l'image est ronde */
-    object-fit: contain; /* Empêche l'image d'être trop zoomée, l'ajuste pour tenir dans la bulle */
-    transition: transform 0.3s ease;
+    border-radius: 50% !important; /* Forcer le rendu rond */
+    object-fit: contain; /* Adapter l'image sans déformation */
+    display: block; /* Assurez-vous que l'image se comporte comme un bloc */
+    overflow: hidden; /* S'assure que le contenu respecte le bord arrondi */
 }
 
 .interactive-bubble:hover {

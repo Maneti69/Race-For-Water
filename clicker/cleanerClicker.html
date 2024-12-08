@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaner Clicker</title>
+    <link rel="stylesheet" href="cleanerClicker.css">
+</head>
+
+<body>
+    <button id="home-button" class="home-button">Accueil</button>
+
+    <audio autoplay id="backgroundMusic" loop>
+        <source src="oceanmusicfrommario.mp3" type="audio/mpeg">
+    </audio>
+    <div class="counter-display">
+        <span id="count">0</span> Déchets
+    </div>
+    <div class="argent-display">
+        <span id="argent">0</span> Déchets recyclés
+    </div>
+    <div class="container">
+        <button id="clickButton" class="fish-button"></button>
+    </div>
+    <div class="container2">
+        <h1>Cleaner Clicker</h1>
+        <div class="upgrade"> <button class="upbutton" id="ac" onclick="increaseAutoClick()">Auto Click</button>
+            <span class="price" id="priceAutoClick">0</span>
+        </div>
+        <div class="upgrade"> <button class="upbutton" onclick="boat()">Filtres améliorés</button>
+            <span class="price" id="priceBoat">0</span>
+        </div>
+        <div class="upgrade"> <button class="upbutton" id="pc" onclick="upClickPower()">Clics plus puissants</button>
+            <span class="price" id="priceClickPower">0</span>
+        </div>
+        <button id="muteButton" class="upbutton">Couper la Musique</button>
+        <div id="clickCounter" style="display: none;"><span id="clickCount">0</span></div>
+        <div id="timer" style="display: none;"><span id="timeLeft">100</span> </div>
+        <div id="autoClickContainer"></div>
+    </div>
+    <div id="autoClickContainer"></div>
+    <script src="cleanerClicker.js"></script>
+</body>
+
+</html>
